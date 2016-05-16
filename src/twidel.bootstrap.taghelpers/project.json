@@ -1,0 +1,30 @@
+﻿{
+    "version": "0.0.1-alpha",
+    "title": "twidel.bootstrap.taghelpers",
+    "description": "ASPNET Core Taghelpers for bootstrap",
+    "authors": [ "Harrie Essing" ],
+    "owners": [ "twidel solutions" ],
+    "tags": [ "dotnetcore", "aspnetcore", "taghelpers", "bootstrap" ],
+    "projectUrl": "https://github.com/DeluxZ/twidel.bootstrap.taghelpers",
+    "licenseUrl": "https://github.com/DeluxZ/twidel.bootstrap.taghelpers/blob/master/LICENSE",
+    "copyright": "2016 twidel solutions",
+    "releaseNotes": "Update to ASP.NET Core RC1",
+
+    "dependencies": {
+        "Microsoft.AspNet.Mvc": "6.0.0-rc1-final",
+        "Microsoft.AspNet.Mvc.TagHelpers": "6.0.0-rc1-final"
+    },
+
+    "frameworks": {
+        "net451": { },
+        "dnxcore50": {
+            "dependencies": {
+                "Microsoft.CSharp": "4.0.1-beta-23516",
+                "System.Collections": "4.0.11-beta-23516",
+                "System.Linq": "4.0.1-beta-23516",
+                "System.Runtime": "4.0.21-beta-23516",
+                "System.Threading": "4.0.11-beta-23516"
+            }
+        }
+    }
+}
