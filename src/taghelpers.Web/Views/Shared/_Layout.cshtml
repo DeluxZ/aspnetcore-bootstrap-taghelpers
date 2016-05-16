@@ -17,26 +17,25 @@
     </environment>
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+    <div class="container">
+        <nav class="navbar navbar-light bg-faded">
+            <div class="collapse navbar-toggleable-xs" id="navbar-header">
                 <a asp-controller="Home" asp-action="Index" class="navbar-brand">taghelpers.Web</a>
-            </div>
-            <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-controller="Home" asp-action="Contact">Contact</a></li>
+                    <li class="nav-item">
+                        <a asp-controller="Home" asp-action="Index" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a asp-controller="Home" asp-action="About" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a asp-controller="Home" asp-action="Contact" class="nav-link">Contact</a>
+                    </li>
                 </ul>
             </div>
-        </div>
+        </nav> <!-- /navbar -->
     </div>
+
     <div class="container body-content">
         @RenderBody()
         <hr />
@@ -47,6 +46,7 @@
 
     <environment names="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/tether/dist/js/tether.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
         <script src="~/js/site.js" asp-append-version="true"></script>
     </environment>
@@ -55,6 +55,8 @@
                 asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
                 asp-fallback-test="window.jQuery">
         </script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.3.1/js/tether.min.js"
+                asp-fallback-src="~/lib/tether/dist/js/tether.js"></script>
         <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/bootstrap.min.js"
                 asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
                 asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal">
