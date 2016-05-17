@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNet.Razor.TagHelpers;
+﻿using Microsoft.AspNetCore.Razor.TagHelpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -54,7 +54,7 @@ $@"<div class='progress-bar' role='progressbar' aria-valuenow='{ProgressValue}' 
                 classValue = "progress";
             }
 
-            output.Attributes["class"] = classValue;
+            output.Attributes.Add("class", classValue);
 
             base.Process(context, output);
         }
