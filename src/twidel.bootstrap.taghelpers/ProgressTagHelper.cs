@@ -35,9 +35,9 @@ namespace twidel.bootstrap.taghelpers
             var progressPercentage = Math.Round((decimal)(ProgressValue - ProgressMin) / (decimal)progressTotal * 100, 0);
 
             string progressBarContent =
-$@"<div class='progress-bar' role='progressbar' aria-valuenow='{ProgressValue}' aria-valuemin='{ProgressMin}' aria-valuemax='{ProgressMax}' style='width: {progressPercentage}%;'> 
-   <span class='sr-only'>{progressPercentage}% Complete</span>
-</div>";
+                $@"<progress class='progress' value='{ProgressValue}' max='{ProgressMax}'>
+<div class='progress'><span class='progress-bar' style='width: {progressPercentage}%;'>{progressPercentage}%</span></div>
+</progress>";
 
             output.Content.AppendHtml(progressBarContent);
 

@@ -10,17 +10,17 @@
     "tags": [ "dotnetcore", "aspnetcore", "taghelpers", "bootstrap" ],
     "projectUrl": "https://github.com/DeluxZ/twidel.bootstrap.taghelpers",
     "licenseUrl": "https://github.com/DeluxZ/twidel.bootstrap.taghelpers/blob/master/LICENSE",
-    "releaseNotes": "Updated to ASP.NET Core RC2"
+    "releaseNotes": "Updated to ASP.NET Core"
   },
 
   "dependencies": {
-    "NETStandard.Library": "1.5.0-rc2-24027",
-    "Microsoft.AspNetCore.Mvc": "1.0.0-rc2-final",
-    "Microsoft.AspNetCore.Mvc.TagHelpers": "1.0.0-rc2-final"
+    "NETStandard.Library": "1.6.0",
+    "Microsoft.AspNetCore.Mvc": "1.0.0",
+    "Microsoft.AspNetCore.Mvc.TagHelpers": "1.0.0"
   },
 
   "frameworks": {
-    "netstandard1.5": {
+    "netstandard1.6": {
       "imports": "dnxcore50"
     }
   }
